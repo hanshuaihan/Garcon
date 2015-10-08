@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PaintM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="btn_color_picker">颜色选择器</string>
+	<string name="high_tolerance">高精确度</string>
+	<string name="low_tolerance">低精确度</string>
+	<string name="fill">精确度</string>
+	<string name="shake">确认要清除画面？</string>
+	<string name="shake_yes">是</string>
+	<string name="shake_no">否</string>
+</resources>

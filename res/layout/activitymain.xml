@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/prant"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </RelativeLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/setting"
+        android:textOff=""
+        android:textOn="" />
+
+    <RelativeLayout
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/button_forward"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/forward" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/toolbg"
+            android:paddingLeft="3dp"
+            android:paddingRight="2dp"
+            android:paddingTop="1dp" >
+
+            <Button
+                android:id="@+id/button_brush"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/pen" />
+
+            <Button
+                android:id="@+id/button_color"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/color" />
+
+            <Button
+                android:id="@+id/button_rubber"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rubber" />
+            <Button
+                android:id="@+id/button_fill"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp" 
+                android:background="@drawable/tong" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="75dp"
+            android:layout_height="370dp"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/toolbgh" >
+
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/tools_top"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/grey_overlay" >
+
+            <Button
+                android:id="@+id/button_new"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+                android:background="@drawable/benew" />
+
+            <Button
+                android:id="@+id/button_open"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+                android:layout_toRightOf="@id/button_new"
+                android:background="@drawable/open" />
+
+            <Button
+                android:id="@+id/button_save"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+                android:layout_toRightOf="@id/button_open"
+                android:background="@drawable/save" />
+            
+		            
+		    <Button
+		        android:id="@+id/button_zoom"
+		        style="?android:attr/buttonStyleSmall"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+                android:layout_toRightOf="@id/button_save" 
+		        android:background="@drawable/view" />
+
+		    <Button
+		        android:id="@+id/button_share" 
+		        android:layout_alignParentBottom="true"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+		        android:layout_toRightOf="@+id/button_zoom"
+		        android:background="@drawable/share" />
+		    <Button
+		        android:id="@+id/button_wallpaper" 
+		        android:layout_alignParentBottom="true"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+		        android:layout_toRightOf="@+id/button_share"
+		        android:background="@drawable/wallpaper" />
+		     <Button
+		        android:id="@+id/button_trans" 
+		        android:layout_alignParentBottom="true"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+		        android:layout_toRightOf="@+id/button_wallpaper" />
+        </RelativeLayout>
+    <SeekBar
+        android:id="@+id/adj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:layout_marginTop="100dp"
+        android:progress="50"
+        android:visibility="invisible" >
+    </SeekBar>
+    </RelativeLayout>
+
+</RelativeLayout>
